@@ -1,0 +1,1028 @@
+
+@import url(https://fonts.googleapis.com/css?family-Open+Sans);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+       font-family: "Roboto",arial,helvetica,sans-serif;
+       background: #f5f5f5;
+}
+header{
+    width: 100%;
+/*    background:  #2a6496;*/
+    /*background:  #3677AA;*/
+    /*background: #2b542c;*/
+    background: #000;
+    position:absolute;     
+    z-index: 1;
+}
+.menu{
+    width: 100%;
+    max-width: 1600px;
+    
+    margin: auto;
+    padding: .5em 0;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+  
+   background: linear-gradient(#000,white); 
+}
+#botones_filtros{
+    background-color: #A2C02B;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+#botones_filtros:hover{
+    background: linear-gradient(#A2C02B,#C2CCD1);
+    
+}    
+.linea_comentario:hover{
+    background-color: #adadad;
+}
+#icon-elim-reserva:hover{
+    color:#d14;
+    cursor:pointer;
+   
+}
+#icon-confirm-reserva:hover{
+    color:#009926;
+    cursor:pointer;
+    
+}
+#icon-elimin-reserva{
+    background: transparent;
+}
+#icon-confirm-reserva{
+    background: transparent;
+}    
+.rojo{
+    background:red;
+    color:#fff;
+    text-align:center;
+}
+.verde{
+    background:#099;
+    color:#fff;
+     text-align:center; 
+}
+
+.td-transparente{
+    background-color:rgba(0, 0, 0, 0);
+    width:5% !important;
+    float:left;
+}
+
+#linea_reserva td{
+    font-size: 15px;
+}
+#linea_reserva #confirmacion{
+     font-size: 40px;
+}
+
+
+#linea_reserva.rojo:hover{
+    background:#a94442;
+}
+#linea_reserva.verde:hover{
+    background:#008080;
+}
+.table td{
+    
+    padding: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+    border-style: none !important;
+    border:none;
+    border-spacing: 0;
+    border: 0;
+    text-align: left;
+    justify-content: left;
+
+    
+}
+
+.table tr{
+    border-bottom-style: hidden;
+}
+ #td-ico{
+  background-color: rgb(0,0,0,0);
+   width:20px;
+}
+
+ 
+#lab-tit-logo{
+    color:#f5f5f5;
+    margin-top:5px;
+    margin-left: 20px;
+    font-size: 25px;
+   
+}
+/*gallaguer*/
+.menu:before,
+.menu:after{
+    content: "";
+    display:block;    
+}
+.menu:after{
+   clear:both;  
+}
+.container-menu{
+    width: 100%;
+    background: #000;
+    float:left;
+}
+
+.container-menu .logo .logo-name{
+    display:flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.container-menu .logo .logo-name img {
+    width: 200px;
+    margin-left: 25px;
+}
+.container-menu .logo .btn-menu {
+    display:none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;   
+     
+}
+.container-menu .logo-name{
+  
+    float:left;
+}
+.container-menu .icon-menu{
+    
+    float:left;
+}
+.container-menu .icon-usuario{
+    padding-top:25px;
+   padding-left:100px;
+    size: 30px;
+    float:left;
+}
+.container-menu .icon-usuario span{
+    color:white;
+    padding:16px;
+    font-size:25px;
+    
+}   
+.container-menu .icon-usuario span.fa-power-off:hover{
+    color:#b92c28;
+}    
+
+.container-menu .icon-usuario a{
+    color:#C2CCD1;
+    border-right: 1px solid;
+    
+}    
+#usuario-ul ul{
+  /*margin-top:1px;*/
+}
+#usuario-ul ul ul {    
+    margin:20px 0 0 0;
+    opacity:0;
+    visibility: hidden;
+    position:absolute;
+    top:65px;
+    left:0;
+    z-index: 1;
+    background: #444;
+   
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+   
+    border-radius:3px;
+    -moz-border-radius:3px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    background: linear-gradient(#444,#C2CCD1);
+    
+}
+
+#usuario-ul ul li{
+    display:inline-block;
+    margin-top:2px;
+    float:left;
+    /*border-right: 1px solid gray;*/
+    position:relative;
+    
+}
+#usuario-ul ul li a{
+    text-decoration: none;
+    color: #fff;
+    /*margin-left:15px;*/
+   /*font-size: 15px;*/   
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+    
+    /*float:left;*/
+   
+    text-transform:none;
+    font:bold 15px roboto,arial,helvetica;
+}
+#usuario-ul ul li a:hover{
+ color:#91fd9e;
+}
+#usuario-ul li:hover > ul{  
+    opacity:1;
+    visibility: visible;
+    margin:0;
+}    
+
+#usuario-ul ul a{  
+    padding: 4px;
+    /*width:120px;*/
+     width:210px;
+    display:block;
+    white-space: nowrap;
+    float: left;
+    text-transform: none;
+     z-index: 1;
+    
+}   
+
+
+.menu .menu-link ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    padding-top:5px;
+    
+}
+/*opciones de la lista desordenada margen a la izda del ul altura de los li....*/
+.menu .menu-link ul li{
+    margin-left:2px;
+    display:inline-block;
+    
+    float:left;
+    /*border-right: 1px solid gray;*/
+    position:relative;
+    height:26px;
+     
+   
+}
+/*opciones del menu general calendario socios .....*/
+.menu .menu-link ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left:35px;
+   /*font-size: 15px;*/   
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+    
+    float:left;
+    z-index: 1;
+    text-transform: none;
+    font:bold 15px roboto,arial,helvetica;
+    vertical-align: middle;
+    
+}
+.menu .menu-link ul li a:hover{
+    /*border-bottom: 2px solid #91fd9e;*/
+        color:#91fd9e;
+/*        background-color:white;*/
+        /*color:#;*/
+}
+
+#menu-ul ul{    
+    margin:10px 0 0 0;
+    opacity:0;
+    visibility: hidden;
+    position:absolute;
+    top:25px;
+    left:30px;
+    
+    z-index: 1;
+    background: #444;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+    border-radius:3px;
+    transition: all 0.2s ease-in-out; 
+    background: linear-gradient(#5e5e5e,#444)
+}
+/*ancho del ul donde estan contenidos los enlaces*/
+#menu-ul ul a{  
+    margin:5px 0 0 5px;
+    top:0;
+    padding-top:1px;
+    padding-left:0px;
+    width:145px;
+    display:block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none; 
+    font-family:arial,helvetica,sans-serif;
+    font-size:15px;
+    
+    
+} 
+
+
+
+#menu-ul li:hover > ul{  
+    opacity:1;
+    visibility: visible;
+    margin:0;
+}    
+#menu-ul li{
+    margin-top:1px;
+}
+#menu-mante{
+    height: 120px;
+    width: 175px;
+}
+   
+ .filtro-activi{
+   
+    position:relative;
+    font-size: 20px;
+    /*height: 17%;*/
+    float:left;
+    clear:both;
+    /*top:20px;*/
+    margin-top: 120px;
+    padding-left: 62px;
+    /*margin-left:50px;*/
+    /*padding-top:10px;*/
+    background: #EEE;
+    width: 100%;
+   
+/*    border-style:ridge;
+    border-radius: 5px;
+    border-color: #C2CCD1;*/
+    } 
+.filtro-activi label{
+    margin-top:  14px;
+}
+
+.banner{
+    margin-left:47px;
+        
+}
+ .ventana_socio{
+    position:relative;
+    width:100%;
+    max-width:1600px;
+    top:10px;
+    margin:auto;
+    height:400px;
+    color:#fff;    
+    padding-top: 20px;
+        
+        /*padding-left:50px;*/
+    background-position: center;    
+    background-size: cover; 
+    -moz-background-size: cover;
+    
+    z-index: 1000;
+
+    }
+ .eac-plate-dark input {
+ 
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  width: 280px;
+}
+#ico_valida_reserva{
+  padding-top: 35px;
+  font-size: 25px;
+  
+}
+#ico_valida_reserva:hover{
+
+cursor:pointer;
+}
+.fondo_titulo{
+    
+    margin:auto;
+     
+    font-size:30px;
+    background-position: left;
+}
+.titulo_list_moni{
+    border-style: none;
+    background-color: transparent;
+}
+.fecha_list_moni{
+    border-style: none;
+    background-color: transparent;
+}
+#boton_muestra_historial{
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 20px;
+    color:#EEE;
+    background-color: #C2CCD1;
+    border-radius:3px;
+    width:80px;
+    cursor:pointer;
+    background: linear-gradient(#444,#C2CCD1);
+    text-align:center;
+    
+}/*
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}*/
+#cierra_historial_socio{
+    float:right;
+    cursor:pointer;
+    color:white;
+    
+}
+#historial_reservas{
+/*    position:absolute;*/
+    background-color: #C2CCD1;
+    background: linear-gradient(#444,#C2CCD1);
+    z-index: 1;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+    border-radius:3px;
+    transform:scale(1);
+   
+    transition-property:transform;
+    transition-duration:all 0.10s ease-in-out;
+    transition:translate .5s ease;
+    -moz-border-radius:3px;
+    -moz-transform:scale(1);
+    
+    -moz-transform-origin:left top;
+    -moz-transition-property:transform;
+    -moz-transition-duration:all 0.10s ease-in-out;
+    text-align:center;
+    
+    
+}
+#cab_historial_reservas{
+    color:#adadad;
+    font:bold 20px arial,helvetica;
+    text-align: center;
+}
+.marco_confirma_reserva{
+    position:absolute;
+    width:800px;
+    height:425px;
+    border-style:solid; 
+    border-radius:3px;    
+    background-size: cover;
+    float:left;
+    clear:both;
+/*   margin-top: 200px;
+   margin-left:70px;
+   margin-right:*/
+    margin: 200 0 0 80;
+  
+
+}
+
+#confirma_reserva{
+    width:100%;
+    height:100%;
+    background-color: #C2CCD1;
+    background: linear-gradient(#444,#C2CCD1);
+    /*background-image: url("/imagenes/logo_entrar.jpg");*/
+}
+div.marco_confirma_reserva label{
+    position:absolute;
+    font-size: 100px;
+    text-align: center;
+    margin-left: 110px;
+}
+div.marco_confirma_reserva input{
+    position:absolute;
+    width: 750px;
+    
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+#menu_login_confirma_reserva{
+    padding-top: 500px;
+}
+
+/*.menu_login_confirma_reserva .logo_confirma_reserva img:hover{
+    cursor:pointer;
+    
+    border-radius: 8px;
+    background:rgb(102, 181, 255);
+    añadimos sombras inferiores
+    -moz-box-shadow: 0px 5px 0px 0px rgb(0, 105, 202);
+    
+
+   
+   
+   
+    width: 500px;
+    margin:10px 0px 0px 10px;
+    padding:5px;
+    text-decoration:none;
+    añadimos un efecto de transición para que el efecto sea progresivo
+    transition: all 0.10s ease-in-out;
+    -webkit-transition: all 0.10s ease-in-out;
+    IMPORTANTE, si no posicionamos de manera relativa el elemento, al hacer click se moverá entero, sin realizar el engaño que buscamos
+    position:relative;
+}*/
+div.logo1_confirma_reserva{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    /*padding:25px;*/
+      
+    margin-top:30px;
+    margin-left:250px;
+    /*// background-image: url("../imagenes/logo4.png");*/
+     background-repeat: no-repeat;
+     background-size:contain;
+     float:left;
+     clear:both;
+     text-decoration:none;
+     
+    
+}
+div.logo1_confirma_reserva img{
+    width:90%;
+    text-decoration:none;
+}
+div.logo1_confirma_reserva img:active{
+    cursor:pointer;
+     /*background: linear-gradient(red,white);*/
+    margin:0px 0px 0px 10px;
+    padding:5px;
+    text-decoration:none;
+    /*añadimos un efecto de transición para que el efecto sea progresivo*/
+    transition: all 0.10s ease-in-out;
+}
+
+div.logo2_confirma_reserva{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+   /*padding:25px;*/
+      
+    margin-top:75px;
+    margin-left:250px;
+    /*// background-image: url("../imagenes/logo4.png");*/
+     background-repeat: no-repeat;
+     background-size:contain;
+     float:left;
+     
+}
+div.logo2_confirma_reserva img{
+    width:90%;
+}
+div.logo2_confirma_reserva img:active{
+    cursor:pointer;
+/*     background: linear-gradient(red,white);*/
+    margin:10px 0px 0px 10px;
+    padding:5px;
+    text-decoration:none;
+    /*añadimos un efecto de transición para que el efecto sea progresivo*/
+    transition: all 0.10s ease-in-out;
+}
+
+/*div.logo_confirma_reserva p{
+    color: white;
+    font-size: 40px;
+    font-family: fantasy;
+    font-weight: bold;
+    text-align:left;
+}*/
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 75px;
+    font-weight: bold;
+    font-family:fantasy;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+.datos_abonado{
+    padding-top:130px;
+    padding-left:100px;
+    font-size: 20px;
+    
+    float:left;
+    
+}
+i.fa-arrow-left{
+    padding-top:10px;
+}
+i.fa-home {
+     padding-top:8px;
+}
+.teclado{
+    color:black; 
+    border-style: solid; 
+    background-color:#A2C02B;
+    tex-align:center;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor:pointer;
+}
+.teclado:hover{
+    background-color:white;
+}    
+.teclado_limpiar{
+    color:black; 
+    border-style: solid; 
+    background-color:#A2C02B;
+    tex-align:center;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor:pointer;
+}
+.teclado_limpiar:hover{
+    background-color:white;
+}    
+.teclado_borrar{
+    color:black; 
+    border-style: solid; 
+    background-color:#A2C02B;
+    tex-align:center;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor:pointer;
+}
+.teclado_borrar:hover{
+    background-color:white;
+}    
+.contenedor_modal{
+    font-size:40px !important;
+   
+}
+.contenedor_modal input, .contenedor_modal textArea, .contenedor_modal button{
+    font-size:30px !important;
+}
+.plantilla_correo{
+    width:750px;
+    height:410px;
+    margin:20px 0px 0px 20px;
+    background:#EEE;
+    border-radius: 3px;
+    border-style: solid;
+    border-color:#C2CCD1;
+    text-decoration: none;
+}
+#ico_envio_mail{
+    margin-left:5px;
+    padding-top:15px;
+    color:#2b81af;
+    font-size:20px;
+}
+#ico_envio_mail:hover{
+    cursor:pointer;
+    color:#0095dd;
+}
+#aviso{
+    margin-left:350px;
+}
+.mail-para{
+    margin-left:5px;
+    background-color:#d5d5d5;
+    text-align: center;
+    text-justify: center;
+    width:120px;
+    font-size:25px;
+    color:#2b81af;
+    float:left;
+        
+}
+.mail-asunto{
+    color:#d5d5d5;
+    float:left;
+}
+#dir-correo{
+    width:600px;
+    height:40px;
+    border-style: none;
+    margin-left:10px;
+    padding-top:5px;
+   
+}
+#asunto{
+    width:725px;
+    border-style: none;
+    margin-left:10px;
+    
+}
+#mensaje{
+    width:725px;;
+    height:140px;
+    border-style: none;
+    margin-left:10px;
+    
+}
+.check_abonado{
+  
+    margin-left:5px;
+    width:20x;
+}
+#modal_confirma_totem{
+    max-width: 1100px !important;
+    max-height: 1000px !important;
+    font-size: 35px !important;
+}
+#reserva_confirma{
+ position:absolute;
+ top:200px;
+ left:300px;
+ width:500px;
+ height:350px;
+ /*background-color: #A2C02B;*/
+ background: linear-gradient(#A2C02B,#EEE);
+ color:black;
+ /*color:#2b81af;*/
+ border-radius:25px;
+ transition-duration: .5s;
+ transition: .5s;
+ z-index: 1000;
+}
+/*#reserva_confirma.confirma_reserva_cuerpo{
+  position:absolute;  
+  top: 270px;
+  left: 320px;   
+  background-color:#C2CCD1;  
+  height:400px;
+  width:200px;
+  z-index:1000;  
+}    */
+#reserva_confirma input{
+  width:400px;
+  height:60px;
+  background-color: transparent;
+  font-size:40px;
+  float:left;
+  clear:both;
+  margin-top: 20px;
+  padding-left:80px;
+  border-style:none;
+  text-align: center; 
+  color:#444;
+  
+}
+
+
+#reserva_confirma button{
+  height: 60px;
+  width:175;
+  font-size:30px;
+  float:left;
+  margin-top: 40px;
+  margin-left:50px;
+  border-radius: 20px;
+  background-color: #EEE;
+  color:#2b81af;
+  
+}
+#reserva_confirma button:hover{
+ cursor:pointer;
+ background-color:#adadad;
+}   
+
+#mensaje_version{
+    margin-top:200px;
+    margin-left:200px;
+    font-size:100px;
+}
+#mensaje_version img{
+    width:150px;
+    background-color: blue;
+}
+
+#ver_nif{
+    margin-left: 40px;
+    cursor:pointer;
+}
+@media screen and (max-width:1920px){
+    .menu{
+        max-width: 1920px;
+        
+    }
+    .container{
+        max-width: 1920px;
+        height:900px;
+    }
+    .ventana_socio{
+        max-width: 1920px;
+        height:900px;
+    }
+    .filtro-activi{
+    
+    font-size:20px;
+    /*height: 25%;*/
+    }
+}
+@media screen and (max-width:1280px){
+    .menu{
+        max-width: 1280px;
+        
+    }
+    .container{
+        max-width: 1280px;
+        height:600px;
+    }
+    .ventana_socio{
+        max-width: 1280px;
+        height:600px;
+    }
+    .filtro-activi{
+    
+    font-size:20px;
+    /*height: 25%;*/
+    }
+}
+@media screen and (max-width:1024px){
+    .menu{
+        max-width: 1024px;
+        /*height:400px;*/
+    }
+    .container{
+        max-width: 1024px;
+        height:768px;
+    }
+    .ventana_socio{
+        max-width: 1024px;
+        height:768px;
+    }
+    
+    .filtro-activi{
+    font-size:15px;
+    /*height: 15%;*/
+    }
+  
+    
+        
+}
+
+@media screen and (max-width:700px){
+    .menu{
+        max-width: 700px;
+        /*height:400px;*/
+    }
+    .container{
+        max-width: 700px;
+        height:400px;
+    }
+    .ventana_socio{
+        max-width: 700px;
+        height:400px;
+    }
+    .container-menu .logo .btn-menu {
+        display:block;
+        margin:0px;
+       
+    }    
+    .container-menu .logo{
+    display:flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    }
+    .container-menu{
+        width:100%;
+    }
+    .container-menu .logo .logo-name img {
+    width: 100px;
+    margin-left: 0px;
+    }
+    #lab-tit-logo{
+    margin-left: 0px;
+    font-size: 10px;
+    }
+    
+    .menu .menu-link {
+        position:absolute;
+        background:rgba(0,0,0,.7);
+        height: 100vh;
+        width: 100%;
+        top:75px;
+        left: -100%;
+        z-index: 1000;
+        transition: .3s;
+
+    }
+    .menu .menu-link ul li{
+        display:block;
+        background-position: center;
+        
+        clear:both;
+        font-size: 25px;
+        width: 100%;
+        /*padding-left:50px;*/
+         border-bottom: 2px solid #fff;
+       
+         
+    }
+    .menu .menu-link ul li a{
+        display:block;
+        height: 50px;
+        /*border-bottom: 2px solid #fff;*/
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+          
+    }   
+  .filtro-activi{
+   
+    font-size:12px;
+    /*height: 15%;*/
+   
+    }  
+    
+    
+    
+}
+@media screen and (max-width:575px){
+    #cab_historial_reservas{
+            font-size: 10px;        
+    }
+    
+}    
+@media screen and (max-width:500px){
+    .menu{
+        max-width: 500px;
+        /*height:400px;*/
+    }
+    .container{
+        max-width: 500px;
+        height:400px;
+    }
+
+    .ventana_socio{
+        max-width: 500px;
+        height:400px;
+    }
+    .container-menu .logo .logo-name a {
+       
+        font-size: 15px;
+    }    
+    .container-menu .logo .logo-name img{
+        margin-left: 0; 
+    }
+    .banner{
+        font-size:8px;
+    }
+     
+    #lab-tit-logo{
+        display:none;
+    }
+   #usuario-ul ul li a{  
+    padding: 5px;
+    width:100px;
+    display:block;
+    white-space: nowrap;
+    float: left;
+    text-transform:none;
+    font-size: 12px;
+    z-index: 1000;
+    }   
+    #usuario-ul ul ul {    
+    
+    top:40px;
+  
+    }
+    .filtro-activi{
+   
+    font-size:10px;
+    /*height: 21%;*/
+   
+    }  
+    .eac-plate-dark input {
+        margin-left: 0px;
+        width: 160px;
+        
+     }   
+    
+      .container-menu img{
+      width:10px;
+       }
+    
+}
+@media screen and (max-width:330px){
+    #cab_historial_reservas{
+            font-size: 5px;        
+    }   
+     
+     
+}    
